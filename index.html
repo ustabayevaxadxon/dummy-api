@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Test</title>
-</head>
-<body>
+    <!-- <script src="./js/main.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="buttons">
+        <button @click="HandleClick('title')">Order by title</button>
+        <button @click="HandleClick('salary')">Order by price</button>
+        <button @click="HandleClick('location')">Order by location</button>
+      </div>
+    </header>
     <div class="main">
-        <button id="get-product">Get Product</button>
-        <ul class="list" id="product-list">
-            <li class="list--item" id="product-item"></li>
-        </ul>
+      <ul class="list" id="product-list">
+        <!-- <li class="list--item">
+                <h2 class="list--item__brand"></h2>
+                <h3 class="list--item__name"></h3>
+                <h4 class="list--item__category"></h4>
+                <img src="" alt="" class="list--item__img">
+                <p class="list--item__desc"></p>
+                <p class="list--item__price"></p>
+                <button id="list--item__btn">Get Product</button>
+            </li> -->
+        <!-- <li class="list--item" id="product-item"></li> -->
+      </ul>
     </div>
+    <img src="" height="content" alt="">
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
